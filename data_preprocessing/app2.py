@@ -6,13 +6,13 @@ import requests
 from bs4 import BeautifulSoup
 
 # Load data
-movies_dict = pickle.load(open('movies.pkl', 'rb'))
+movies_dict = pickle.load(open('../movies.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
 
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+similarity = pickle.load(open('../similarity.pkl', 'rb'))
 
-model = pickle.load(open("sentiment_model.pkl", "rb"))
-vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
+model = pickle.load(open("../sentiment_model.pkl", "rb"))
+vectorizer = pickle.load(open("../vectorizer.pkl", "rb"))
 
 
 # ---------------- RECOMMENDATION ---------------- #
@@ -44,7 +44,7 @@ def fetch_reviews(imdb_id):
     url = f'https://www.imdb.com/title/{imdb_id}/reviews/'
 
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win 64 ; x64) Apple WeKit /537.36(KHTML , like Gecko) Chrome/80.0.3987.162 Safari/537.36'}
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6git .3; Win 64 ; x64) Apple WeKit /537.36(KHTML , like Gecko) Chrome/80.0.3987.162 Safari/537.36'}
 
 
     response = requests.get(url, headers=headers).text

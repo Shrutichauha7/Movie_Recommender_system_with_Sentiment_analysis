@@ -3,4 +3,6 @@ data/movies_metadata.csv
 data/mymoviedb.csv
 data/tmdb_5000_credits.csv
 data/tmdb_5000_movies.csv
-
+similarity.pkl
+__pycache__/
+*.pyc
