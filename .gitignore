@@ -4,5 +4,12 @@ data/mymoviedb.csv
 data/tmdb_5000_credits.csv
 data/tmdb_5000_movies.csv
 similarity.pkl
+kmeans.pkl
+movie_features.pkl
+movie_names.pkl
+scaler.pkl
+movies.pkl
+sentiment_model.pkl
+vectorizer.pkl
 __pycache__/
 *.pyc
